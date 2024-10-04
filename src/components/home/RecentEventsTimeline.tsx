@@ -13,7 +13,7 @@ export function RecentEventsTimeline() {
             <Timeline.Time>{RecentEventsList[index].date}</Timeline.Time>
             {RecentEventsList[index].link !== undefined ? (
               <Timeline.Title>
-                <Link to={RecentEventsList[index].link}>
+                <Link to={RecentEventsList[index].link || ""}>
                   {RecentEventsList[index].title}
                 </Link>
               </Timeline.Title>
