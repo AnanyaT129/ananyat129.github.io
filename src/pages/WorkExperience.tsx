@@ -9,7 +9,7 @@ export function WorkExperience() {
     <div>
       <Header />
       <Container maxWidth="lg">
-        <WorkExperienceList work={AllWorkExperiences} button="Back" link="/"/>
+        <WorkExperienceList work={AllWorkExperiences} button="Back" link="/" />
       </Container>
       <Foot />
     </div>

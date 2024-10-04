@@ -82,3 +82,14 @@ export var scrabble: ProjectCardInputs = {
     'Scrabble is a board game in which players randomly pick 7 letters from a bag of 100 as their "hand." In turns, they place new words on a 15x15 board by utilizing the existing letters. They gain points depending on which letters they used and which spots on the board their letters covered. Using an object oriented design, the code was split into two main sections: first, several classes that make up the backbone of the game functions were designed and tested. Next, a Graphical User Interface (GUI) was developed to integrate those functions with user inputs. The backend can also run independently in the terminal, if desired. It displays a board with Triple Letter Score and Double Letter Score squares, similar to a traditional scrabble board, automatically updates players’ hands after every turn, displayed at the top of the GUI, and includes a section for a player to enter a word, then click to place it on an interactive board. Skips and forfeits, valid word checks to only allow legal plays, and a real-time scoring system was also added. Overall, a game of Scrabble played as closely as possible to the traditional board game, with enhanced features wherever possible, was developed.',
   subtitle: "A 2 person interactive game of Scrabble",
 };
+
+export var capstone: ProjectCardInputs = {
+  src: "/images/capstone.jpg",
+  title: "Capstone",
+  year: 2022,
+  tech: "Python, Arduino, Computer Vision",
+  purpose: "Engineering Capstone Final Project",
+  authors: "teammates",
+  description: "",
+  subtitle: "Automated filtering & detection of microplastics in water",
+};

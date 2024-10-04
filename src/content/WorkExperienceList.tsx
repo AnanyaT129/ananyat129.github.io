@@ -23,6 +23,6 @@ export var AllWorkExperiences: WorkTimelineProps[] = [
   },
   {
     year: "2022",
-    work: []
-  }
+    work: [],
+  },
 ];

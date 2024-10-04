@@ -60,7 +60,9 @@ export function WorkDescriptionDrawer(props: WorkDescriptionProps) {
               </p>
             ))}
           </Timeline.Body>
-          <Timeline.Title className="text-sm">What I accomplished...</Timeline.Title>
+          <Timeline.Title className="text-sm">
+            What I accomplished...
+          </Timeline.Title>
           <Timeline.Body className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
             {Array.from(Array(props.accomplished.length)).map((_, index) => (
               <p className="mb-2 text-gray-500 dark:text-gray-400">

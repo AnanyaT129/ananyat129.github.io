@@ -14,7 +14,11 @@ export default function Home() {
       <Divider></Divider>
       <Interests></Interests>
       <Divider></Divider>
-      <WorkExperienceList work={RecentWorkExperiences} button="See More" link="/workExperience"/>
+      <WorkExperienceList
+        work={RecentWorkExperiences}
+        button="See More"
+        link="/workExperience"
+      />
       <Foot />
     </div>
   );

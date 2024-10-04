@@ -7,6 +7,7 @@ import {
   foodSaver,
   website,
   scrabble,
+  capstone,
 } from "./AllProjects";
 
 export type DividedList = {
@@ -15,6 +16,7 @@ export type DividedList = {
 };
 
 export var allProjects: ProjectCardInputs[] = [
+  capstone,
   mobileApp,
   machineLearning,
   bulletJournal,
@@ -29,7 +31,7 @@ export var publications: ProjectCardInputs[] = [myowearable, foodSaver];
 export var years: DividedList[] = [
   {
     name: "2024",
-    items: [mobileApp, machineLearning, website],
+    items: [capstone, mobileApp, machineLearning, website],
   },
   {
     name: "2023",
