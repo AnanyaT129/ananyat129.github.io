@@ -17,7 +17,7 @@ export function Foot() {
           <Footer.Copyright href="#" by="Ananya Tadigadapa" year={2024} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon
-              href="https://www.linkedin.com/in/ananya-tadigadapa"
+              href="/resume.pdf"
               target="_blank"
               icon={BsFileEarmarkTextFill}
             />

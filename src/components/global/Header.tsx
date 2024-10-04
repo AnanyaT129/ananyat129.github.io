@@ -27,9 +27,6 @@ export function Header() {
             <Link to={"/projects"}>Projects & Publications</Link>
           </NavbarLink>
           <NavbarLink>
-            <Link to={"/workExperience"}>Work Experience</Link>
-          </NavbarLink>
-          <NavbarLink>
             <Link to={"/leadership"}>Leadership</Link>
           </NavbarLink>
           <NavbarLink>

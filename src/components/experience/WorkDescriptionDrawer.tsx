@@ -10,7 +10,8 @@ import {
 export type WorkDescriptionProps = {
   title: string;
   position: string;
-  description: string[];
+  learned: string[];
+  accomplished: string[];
   time: string;
   imgSrc: string;
   imgAlt?: string;
@@ -51,11 +52,22 @@ export function WorkDescriptionDrawer(props: WorkDescriptionProps) {
           </Stack>
         </AccordionTitle>
         <AccordionContent>
-          {Array.from(Array(props.description.length)).map((_, index) => (
-            <p className="mb-2 text-gray-500 dark:text-gray-400">
-              {props.description[index]}
-            </p>
-          ))}
+          <Timeline.Title className="text-sm">What I learned...</Timeline.Title>
+          <Timeline.Body className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+            {Array.from(Array(props.learned.length)).map((_, index) => (
+              <p className="mb-2 text-gray-500 dark:text-gray-400">
+                {props.learned[index]}
+              </p>
+            ))}
+          </Timeline.Body>
+          <Timeline.Title className="text-sm">What I accomplished...</Timeline.Title>
+          <Timeline.Body className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+            {Array.from(Array(props.accomplished.length)).map((_, index) => (
+              <p className="mb-2 text-gray-500 dark:text-gray-400">
+                {props.accomplished[index]}
+              </p>
+            ))}
+          </Timeline.Body>
         </AccordionContent>
       </AccordionPanel>
     </Accordion>

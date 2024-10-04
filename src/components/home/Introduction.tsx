@@ -45,7 +45,7 @@ export function Introduction() {
             <Card
               imgAlt="Ananya Tadigadapa Logo"
               imgSrc="/images/profile.jpg"
-              className="max-w-fit border-transparent shadow-none"
+              className="border-transparent shadow-none"
             ></Card>
           </Item>
         </Grid2>

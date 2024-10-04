@@ -3,7 +3,8 @@ import { Header } from "../components/global/Header";
 import { Introduction } from "../components/home/Introduction";
 import { Divider } from "@mui/material";
 import { Interests } from "../components/home/Interests";
-import { FeaturedWork } from "../components/home/FeaturedWork";
+import { WorkExperienceList } from "../components/experience/WorkExperienceList";
+import { RecentWorkExperiences } from "../content/WorkExperienceList";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <Divider></Divider>
       <Interests></Interests>
       <Divider></Divider>
-      <FeaturedWork></FeaturedWork>
+      <WorkExperienceList work={RecentWorkExperiences} button="See More" link="/workExperience"/>
       <Foot />
     </div>
   );

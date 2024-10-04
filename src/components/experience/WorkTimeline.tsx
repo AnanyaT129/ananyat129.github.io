@@ -29,7 +29,8 @@ export function WorkTimeline(props: { work: WorkTimelineProps[] }) {
                 <WorkDescriptionDrawer
                   title={props.work[index].work[j].title}
                   position={props.work[index].work[j].position}
-                  description={props.work[index].work[j].description}
+                  learned={props.work[index].work[j].learned}
+                  accomplished={props.work[index].work[j].accomplished}
                   time={props.work[index].work[j].time}
                   imgSrc={props.work[index].work[j].imgSrc}
                   imgAlt={props.work[index].work[j].imgAlt}
