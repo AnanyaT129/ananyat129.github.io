@@ -52,24 +52,36 @@ export function WorkDescriptionDrawer(props: WorkDescriptionProps) {
           </Stack>
         </AccordionTitle>
         <AccordionContent>
-          <Timeline.Title className="text-sm">What I learned...</Timeline.Title>
-          <Timeline.Body className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-            {Array.from(Array(props.learned.length)).map((_, index) => (
-              <p className="mb-2 text-gray-500 dark:text-gray-400">
-                {props.learned[index]}
-              </p>
-            ))}
-          </Timeline.Body>
-          <Timeline.Title className="text-sm">
-            What I accomplished...
-          </Timeline.Title>
-          <Timeline.Body className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-            {Array.from(Array(props.accomplished.length)).map((_, index) => (
-              <p className="mb-2 text-gray-500 dark:text-gray-400">
-                {props.accomplished[index]}
-              </p>
-            ))}
-          </Timeline.Body>
+          {props.learned.length > 0 ? (
+            <>
+              <Timeline.Title className="text-sm">
+                What I learned...
+              </Timeline.Title>
+              <Timeline.Body className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                {Array.from(Array(props.learned.length)).map((_, index) => (
+                  <p className="mb-2 text-gray-500 dark:text-gray-400">
+                    {props.learned[index]}
+                  </p>
+                ))}
+              </Timeline.Body>
+            </>
+          ) : null}
+          {props.accomplished.length > 0 ? (
+            <>
+              <Timeline.Title className="text-sm">
+                What I accomplished...
+              </Timeline.Title>
+              <Timeline.Body className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                {Array.from(Array(props.accomplished.length)).map(
+                  (_, index) => (
+                    <p className="mb-2 text-gray-500 dark:text-gray-400">
+                      {props.accomplished[index]}
+                    </p>
+                  ),
+                )}
+              </Timeline.Body>
+            </>
+          ) : null}
         </AccordionContent>
       </AccordionPanel>
     </Accordion>

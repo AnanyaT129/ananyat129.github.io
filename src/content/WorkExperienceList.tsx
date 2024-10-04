@@ -1,5 +1,5 @@
 import { WorkTimelineProps } from "../components/experience/WorkTimeline";
-import { neural, tesla, woodmac } from "./AllWorkExperiences";
+import { cambridge, draper, neural, river, tesla, woodmac } from "./AllWorkExperiences";
 
 export var RecentWorkExperiences: WorkTimelineProps[] = [
   {
@@ -22,7 +22,11 @@ export var AllWorkExperiences: WorkTimelineProps[] = [
     work: [woodmac, neural],
   },
   {
-    year: "2022",
-    work: [],
+    year: "2021",
+    work: [river, cambridge]
   },
+  {
+    year: "2019",
+    work: [draper]
+  }
 ];

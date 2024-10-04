@@ -7,7 +7,7 @@ import { Skills } from "../components/skills/Skills";
 export function Projects() {
   return (
     <div>
-      <Header />
+      <Header active={2} />
       <Container maxWidth="lg">
         <Skills />
         <ProjectTabs />

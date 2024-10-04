@@ -14,7 +14,9 @@ export function ModalButton(props: ModalButtonInputs) {
   const [openModal, setOpenModal] = useState(false);
   return (
     <>
-      <Button color="transparent" onClick={() => setOpenModal(true)}>{props.buttonContent}</Button>
+      <Button color="transparent" onClick={() => setOpenModal(true)}>
+        {props.buttonContent}
+      </Button>
       <Modal dismissible show={openModal} onClose={() => setOpenModal(false)}>
         <Modal.Header>
           {props.title}: {props.subtitle}

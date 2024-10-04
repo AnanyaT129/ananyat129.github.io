@@ -44,3 +44,30 @@ export var neural: WorkDescriptionProps = {
   time: "April - June",
   imgSrc: "/images/neural.png",
 };
+
+export var river: WorkDescriptionProps = {
+  title: "RiVER Lab",
+  position: "Summer Lab Volunteer",
+  accomplished: [],
+  learned: [],
+  time: "June - August",
+  imgSrc: "/images/river.jpg",
+};
+
+export var draper: WorkDescriptionProps = {
+  title: "Charles Stark Draper Lab",
+  position: "High School Intern",
+  accomplished: [],
+  learned: [],
+  time: "July - August",
+  imgSrc: "/images/draper.png",
+};
+
+export var cambridge: WorkDescriptionProps = {
+  title: "Cambridge Math Circle",
+  position: "Math Teacher",
+  accomplished: [],
+  learned: [],
+  time: "January - December",
+  imgSrc: "/images/cmc.jpg",
+};

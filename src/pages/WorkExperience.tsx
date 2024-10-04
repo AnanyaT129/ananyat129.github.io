@@ -1,4 +1,4 @@
-import { Container, Divider } from "@mui/material";
+import { Container } from "@mui/material";
 import { Foot } from "../components/global/Footer";
 import { Header } from "../components/global/Header";
 import { WorkExperienceList } from "../components/experience/WorkExperienceList";

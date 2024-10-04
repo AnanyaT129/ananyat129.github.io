@@ -9,7 +9,12 @@ import {
 import { Link } from "react-router-dom";
 import { InProgressBanner } from "./InProgressBanner";
 
-export function Header() {
+export function Header(props: { active?: number }) {
+  var active = [false, false, false, false, false];
+  if (props.active) {
+    active[props.active - 1] = true;
+  }
+
   return (
     <>
       <Navbar fluid rounded>
@@ -20,19 +25,19 @@ export function Header() {
         </NavbarBrand>
         <NavbarToggle />
         <NavbarCollapse>
-          <NavbarLink>
+          <NavbarLink active={active[0]}>
             <Link to={"/"}>Home</Link>
           </NavbarLink>
-          <NavbarLink>
+          <NavbarLink active={active[1]}>
             <Link to={"/projects"}>Projects & Publications</Link>
           </NavbarLink>
-          <NavbarLink>
+          <NavbarLink active={active[2]}>
             <Link to={"/leadership"}>Leadership</Link>
           </NavbarLink>
-          <NavbarLink>
+          <NavbarLink active={active[3]}>
             <Link to={"/music"}>Music</Link>
           </NavbarLink>
-          <NavbarLink>
+          <NavbarLink active={active[4]}>
             <Link to={"/sustainability"}>Sustainability</Link>
           </NavbarLink>
         </NavbarCollapse>

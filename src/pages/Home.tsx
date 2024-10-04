@@ -9,7 +9,7 @@ import { RecentWorkExperiences } from "../content/WorkExperienceList";
 export default function Home() {
   return (
     <div>
-      <Header />
+      <Header active={1} />
       <Introduction></Introduction>
       <Divider></Divider>
       <Interests></Interests>

@@ -7,7 +7,7 @@ import { LeadershipHighlights } from "../components/leadership/LeadershipHighlig
 export function Leadership() {
   return (
     <div>
-      <Header />
+      <Header active={3} />
       <Container maxWidth="lg">
         <LeadershipHighlights></LeadershipHighlights>
       </Container>
