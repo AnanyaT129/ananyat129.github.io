@@ -93,3 +93,25 @@ export var capstone: ProjectCardInputs = {
   description: "",
   subtitle: "Automated filtering & detection of microplastics in water",
 };
+
+export var teslaProject: ProjectCardInputs = {
+  src: "/images/teslaLogo.webp",
+  title: "Tesla",
+  year: 2024,
+  tech: "Scala, React.js, TypeScript, GraphQL",
+  purpose: "Energy Software Internship",
+  authors: "N/A",
+  description: "",
+  subtitle: "Energy Software Internship",
+};
+
+export var woodmacProject: ProjectCardInputs = {
+  src: "/images/woodmacLogo.jpg",
+  title: "Wood Mackenzie",
+  year: 2024,
+  tech: "TypeScript, GraphQL, SQL",
+  purpose: "Software Development Co-op",
+  authors: "N/A",
+  description: "",
+  subtitle: "Software Development Co-op",
+};

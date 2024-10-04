@@ -6,7 +6,6 @@ import { ModalButton } from "../global/ModalButton";
 const Item = styled(Box)(({ theme }) => ({
   backgroundColor: "#fff",
   ...theme.typography.body2,
-  padding: theme.spacing(1),
   textAlign: "center",
   color: theme.palette.text.secondary,
   ...theme.applyStyles("dark", {
@@ -36,7 +35,7 @@ export function SkillPopover(props: { skill: Skill }) {
             </div>
             <div className="px-3 py-2">
               {props.skill.projects.length > 0 ? (
-                <Stack direction="row">
+                <Stack direction="row" useFlexGap sx={{ flexWrap: 'wrap' }}>
                   {Array.from(Array(props.skill.projects.length)).map(
                     (_, index) => (
                       <Item>
@@ -51,6 +50,7 @@ export function SkillPopover(props: { skill: Skill }) {
                               img={props.skill.projects[index].src}
                               alt={props.skill.projects[index].alt}
                               rounded
+                              bordered={true}
                             />
                           }
                         ></ModalButton>

@@ -1,5 +1,5 @@
 import { ProjectCardInputs } from "../components/project/ProjectCard";
-import { bulletJournal, website } from "./AllProjects";
+import { bulletJournal, foodSaver, machineLearning, mobileApp, myowearable, scrabble, teslaProject, website, woodmacProject } from "./AllProjects";
 
 export type Skill = {
   title: string;
@@ -15,13 +15,13 @@ export type SkillSet = {
 
 var languages: Skill[] = [
   {
-    title: "TypeScript & JavaScript",
+    title: "TypeScript",
     description: "look at this amazing website!",
-    projects: [website],
+    projects: [teslaProject, woodmacProject, website],
   },
   {
     title: "Scala",
-    projects: [],
+    projects: [teslaProject],
   },
   {
     title: "Java",
@@ -29,76 +29,95 @@ var languages: Skill[] = [
   },
   {
     title: "Python",
-    projects: [],
+    projects: [machineLearning, myowearable, foodSaver, scrabble],
   },
   {
     title: "C++",
-    projects: [],
+    projects: [myowearable],
   },
   {
     title: "Swift",
-    projects: [],
+    projects: [mobileApp],
   },
   {
     title: "C",
     projects: [],
+  },
+  {
+    title: "SQL",
+    projects: [teslaProject, woodmacProject],
+  },
+  {
+    title: "HTML",
+    projects: [website],
+  },
+  {
+    title: "CSS",
+    projects: [website],
   },
 ];
 
 var frameworks: Skill[] = [
   {
     title: "GraphQL",
-    projects: [],
-  },
-  {
-    title: "SQL",
-    projects: [],
-  },
-  {
-    title: "HTML",
-    projects: [],
-  },
-  {
-    title: "CSS",
-    projects: [],
+    projects: [teslaProject, woodmacProject],
   },
   {
     title: "Docker",
-    projects: [],
+    projects: [woodmacProject],
   },
   {
     title: "React.js",
-    projects: [],
+    projects: [teslaProject, website],
+  },
+  {
+    title: "Akka",
+    projects: [teslaProject],
+  },
+  {
+    title: "Node.js",
+    projects: [woodmacProject, website],
   },
 ];
 
 var cloud: Skill[] = [
   {
-    title: "AWS",
-    description: "S3, Lambdas, Step Functions",
-    projects: [],
+    title: "AWS S3",
+    projects: [teslaProject],
+  },
+  {
+    title: "AWS Lambdas",
+    projects:[woodmacProject]
+  },
+  {
+    title: "AWS Step Functions",
+    projects: [woodmacProject]
   },
   {
     title: "Kubernetes",
-    projects: [],
+    projects: [teslaProject],
+  },
+  {
+    title: "Kafka",
+    projects: [teslaProject],
   },
 ];
 
 var software: Skill[] = [
   {
     title: "Git",
-    projects: [],
+    projects: [teslaProject, woodmacProject, bulletJournal, website, myowearable, scrabble],
   },
   {
     title: "Agile",
-    projects: [],
-  },
-  {
-    title: "Linux",
-    projects: [],
+    projects: [woodmacProject],
   },
   {
     title: "Jenkins (CI/CD)",
+    projects: [woodmacProject],
+  },
+  {
+    title: "Linux",
     projects: [],
   },
   {
@@ -106,9 +125,9 @@ var software: Skill[] = [
     projects: [],
   },
   {
-    title: "Akka",
-    projects: [],
-  },
+    title: "Arduino/Raspberry Pi",
+    projects: [myowearable, foodSaver]
+  }
 ];
 
 export var skillList: SkillSet[] = [

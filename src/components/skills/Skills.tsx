@@ -4,7 +4,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import { styled } from "@mui/material/styles";
-import { Container } from "@mui/material";
+import { Container, Divider } from "@mui/material";
 
 const Item = styled(Box)(({ theme }) => ({
   backgroundColor: "#fff",
@@ -19,16 +19,21 @@ const Item = styled(Box)(({ theme }) => ({
 
 export function Skills() {
   return (
-    <Container sx={{ marginTop: 4 }}>
-      <p className="text-lg text-gray-700 dark:text-gray-400">Skills</p>
+    <Container sx={{ marginTop: 4, marginBottom: 4 }}>
+      <h5 className="mb-4 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        Skills
+      </h5>
       {Array.from(Array(skillList.length)).map((_, index) => (
-        <Stack direction="row" spacing={2}>
-          {Array.from(Array(skillList[index].skills.length)).map((_, j) => (
-            <Item>
-              <SkillPopover skill={skillList[index].skills[j]} />
-            </Item>
-          ))}
-        </Stack>
+        <>
+          <Divider>{skillList[index].name}</Divider>
+          <Stack direction="row" spacing={{ xs: 1, sm: 2 }} useFlexGap sx={{ flexWrap: 'wrap' }}>
+            {Array.from(Array(skillList[index].skills.length)).map((_, j) => (
+              <Item>
+                <SkillPopover skill={skillList[index].skills[j]} />
+              </Item>
+            ))}
+          </Stack>
+        </>
       ))}
     </Container>
   );
