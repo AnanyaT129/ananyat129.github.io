@@ -1,4 +1,4 @@
-import { Button, Modal } from "flowbite-react";
+import { Alert, Button, Modal } from "flowbite-react";
 import { useState } from "react";
 
 type ModalButtonInputs = {
@@ -8,6 +8,8 @@ type ModalButtonInputs = {
   authors: string;
   description: string;
   buttonContent: JSX.Element;
+  descriptionAlert?: string;
+  skill?: string;
 };
 
 export function ModalButton(props: ModalButtonInputs) {
@@ -20,15 +22,27 @@ export function ModalButton(props: ModalButtonInputs) {
       <Modal dismissible show={openModal} onClose={() => setOpenModal(false)}>
         <Modal.Header>
           {props.title}: {props.subtitle}
-        </Modal.Header>
-        <Modal.Body>
-          <div className="space-y-6">
-            <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+          {props.purpose !== "" ? (
+            <p className="text-pretty text-lg leading-relaxed text-gray-500 dark:text-gray-400">
               {props.purpose}
             </p>
+          ) : null}
+          {props.authors !== "" ? (
             <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
               {props.authors}
             </p>
+          ) : null}
+        </Modal.Header>
+        <Modal.Body>
+          {props.descriptionAlert !== undefined && props.skill !== undefined ? (
+            <Alert color="info" className="mb-4">
+              <h6 className="tracking-tight text-gray-900 dark:text-white">
+                How I used {props.skill}:
+              </h6>
+              <span className="font-medium">{props.descriptionAlert}</span>{" "}
+            </Alert>
+          ) : null}
+          <div className="space-y-6">
             <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
               {props.description}
             </p>

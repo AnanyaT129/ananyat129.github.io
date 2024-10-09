@@ -1,19 +1,39 @@
-import { Card } from "flowbite-react";
+import { Button, Card } from "flowbite-react";
 import { ModalButton } from "../global/ModalButton";
+import { Box, Stack, styled } from "@mui/material";
+
+export enum CardOrientation {
+  Vertical,
+  Horizontal,
+}
 
 export type ProjectCardInputs = {
   src: string;
   alt?: string;
   title: string;
   year: number;
-  tech: string;
+  tech: string[];
   subtitle: string;
   purpose: string;
   authors: string;
   description: string;
+  skills: { skill: string; usage: string }[];
 };
 
-export function ProjectCard(props: ProjectCardInputs) {
+const Item = styled(Box)(({ theme }) => ({
+  backgroundColor: "#fff",
+  ...theme.typography.body2,
+  textAlign: "center",
+  color: theme.palette.text.secondary,
+  ...theme.applyStyles("dark", {
+    backgroundColor: "#1A2027",
+  }),
+}));
+
+export function ProjectCard(props: {
+  card: ProjectCardInputs;
+  orientation: CardOrientation;
+}) {
   var content = (
     <>
       Read More
@@ -32,20 +52,31 @@ export function ProjectCard(props: ProjectCardInputs) {
     </>
   );
 
+  var horizontal = props.orientation === CardOrientation.Horizontal;
+
   return (
-    <Card className="max-w-sm" imgAlt={props.alt} imgSrc={props.src}>
+    <Card
+      className="max-w-sm"
+      imgAlt={props.card.alt}
+      imgSrc={props.card.src}
+      horizontal={horizontal}
+    >
       <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        {props.title}
+        {props.card.title}
       </h5>
-      <p className="text-sm text-gray-700 dark:text-gray-400">
-        {props.tech} {props.year}
-      </p>
+      <Stack direction="row" spacing={1} useFlexGap sx={{ flexWrap: "wrap" }}>
+        {Array.from(Array(props.card.tech.length)).map((_, index) => (
+          <Item>
+            <Button outline>{props.card.tech[index]}</Button>
+          </Item>
+        ))}
+      </Stack>
       <ModalButton
-        title={props.title}
-        subtitle={props.subtitle}
-        purpose={props.purpose}
-        authors={props.authors}
-        description={props.description}
+        title={props.card.title}
+        subtitle={props.card.subtitle}
+        purpose={props.card.purpose}
+        authors={props.card.authors}
+        description={props.card.description}
         buttonContent={content}
       ></ModalButton>
     </Card>

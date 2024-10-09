@@ -35,7 +35,7 @@ export function SkillPopover(props: { skill: Skill }) {
             </div>
             <div className="px-3 py-2">
               {props.skill.projects.length > 0 ? (
-                <Stack direction="row" useFlexGap sx={{ flexWrap: 'wrap' }}>
+                <Stack direction="row" useFlexGap sx={{ flexWrap: "wrap" }}>
                   {Array.from(Array(props.skill.projects.length)).map(
                     (_, index) => (
                       <Item>
@@ -43,8 +43,15 @@ export function SkillPopover(props: { skill: Skill }) {
                           title={props.skill.projects[index].title}
                           subtitle={props.skill.projects[index].subtitle}
                           purpose={props.skill.projects[index].purpose}
-                          authors={props.skill.projects[index].authors}
+                          authors={""}
+                          // description={props.skill.projects[index].skills.find((s) => s.skill === props.skill.title)?.usage || ""}
                           description={props.skill.projects[index].description}
+                          descriptionAlert={
+                            props.skill.projects[index].skills.find(
+                              (s) => s.skill === props.skill.title,
+                            )?.usage
+                          }
+                          skill={props.skill.title}
                           buttonContent={
                             <Avatar
                               img={props.skill.projects[index].src}

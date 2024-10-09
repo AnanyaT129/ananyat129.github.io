@@ -26,7 +26,12 @@ export function Skills() {
       {Array.from(Array(skillList.length)).map((_, index) => (
         <>
           <Divider>{skillList[index].name}</Divider>
-          <Stack direction="row" spacing={{ xs: 1, sm: 2 }} useFlexGap sx={{ flexWrap: 'wrap' }}>
+          <Stack
+            direction="row"
+            spacing={{ xs: 1, sm: 2 }}
+            useFlexGap
+            sx={{ flexWrap: "wrap" }}
+          >
             {Array.from(Array(skillList[index].skills.length)).map((_, j) => (
               <Item>
                 <SkillPopover skill={skillList[index].skills[j]} />

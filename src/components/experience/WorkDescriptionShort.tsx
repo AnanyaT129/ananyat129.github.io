@@ -1,6 +1,11 @@
 import { Stack, Divider, Box, styled } from "@mui/material";
-import { AccordionPanel, AccordionTitle, Timeline, Accordion } from "flowbite-react";
-import {VscBlank} from "react-icons/vsc";
+import {
+  AccordionPanel,
+  AccordionTitle,
+  Timeline,
+  Accordion,
+} from "flowbite-react";
+import { VscBlank } from "react-icons/vsc";
 
 type WorkDescriptionProps = {
   title: string;

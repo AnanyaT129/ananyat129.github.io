@@ -1,5 +1,15 @@
 import { ProjectCardInputs } from "../components/project/ProjectCard";
-import { bulletJournal, foodSaver, machineLearning, mobileApp, myowearable, scrabble, teslaProject, website, woodmacProject } from "./AllProjects";
+import {
+  bulletJournal,
+  foodSaver,
+  machineLearning,
+  mobileApp,
+  myowearable,
+  scrabble,
+  teslaProject,
+  website,
+  woodmacProject,
+} from "./AllProjects";
 
 export type Skill = {
   title: string;
@@ -87,11 +97,11 @@ var cloud: Skill[] = [
   },
   {
     title: "AWS Lambdas",
-    projects:[woodmacProject]
+    projects: [woodmacProject],
   },
   {
     title: "AWS Step Functions",
-    projects: [woodmacProject]
+    projects: [woodmacProject],
   },
   {
     title: "Kubernetes",
@@ -106,7 +116,14 @@ var cloud: Skill[] = [
 var software: Skill[] = [
   {
     title: "Git",
-    projects: [teslaProject, woodmacProject, bulletJournal, website, myowearable, scrabble],
+    projects: [
+      teslaProject,
+      woodmacProject,
+      bulletJournal,
+      website,
+      myowearable,
+      scrabble,
+    ],
   },
   {
     title: "Agile",
@@ -126,8 +143,8 @@ var software: Skill[] = [
   },
   {
     title: "Arduino/Raspberry Pi",
-    projects: [myowearable, foodSaver]
-  }
+    projects: [myowearable, foodSaver],
+  },
 ];
 
 export var skillList: SkillSet[] = [
