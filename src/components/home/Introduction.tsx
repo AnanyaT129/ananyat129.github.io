@@ -25,11 +25,11 @@ export function Introduction() {
                 Hi! I'm Ananya
               </h5>
               <p className="text-lg text-gray-700 dark:text-gray-400">
-                I'm a 4th year at Northeastern University majoring in Computer
+                I just graduated from Northeastern University majoring in Computer
                 Engineering & Computer Science, with minors in math and music
                 performance. Through my varied interests, my main goal is to
-                create & contribute to products that have real-world impact,
-                taking steps towards a data-forward, globalized, & energy
+                create and contribute to products that have real-world impact,
+                taking steps towards a data-forward, globalized, and energy
                 efficient future.
               </p>
             </Card>

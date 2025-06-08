@@ -6,7 +6,6 @@ import {
   BsLinkedin,
   BsEnvelopeOpen,
   BsYoutube,
-  BsFileEarmarkTextFill,
 } from "react-icons/bs";
 
 export function Foot() {
@@ -16,11 +15,6 @@ export function Foot() {
         <div className="w-full sm:flex sm:items-center sm:justify-between">
           <Footer.Copyright href="#" by="Ananya Tadigadapa" year={2024} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <Footer.Icon
-              href="/resume.pdf"
-              target="_blank"
-              icon={BsFileEarmarkTextFill}
-            />
             <Footer.Icon
               href="https://www.linkedin.com/in/ananya-tadigadapa"
               target="_blank"

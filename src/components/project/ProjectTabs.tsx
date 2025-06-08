@@ -1,6 +1,6 @@
 import { Tabs } from "flowbite-react";
-import { HiAdjustments, HiClipboardList, HiUserCircle } from "react-icons/hi";
-import { MdDashboard } from "react-icons/md";
+import { HiClipboardCheck, HiClipboardList } from "react-icons/hi";
+import { FaBook, FaCalendar, FaBarsProgress } from "react-icons/fa6";
 import ProjectGrid from "./ProjectGrid";
 import {
   allProjects,
@@ -15,25 +15,25 @@ import { CardOrientation } from "./ProjectCard";
 export function ProjectTabs() {
   return (
     <Tabs aria-label="Tabs with icons">
-      <Tabs.Item active title="Completed Projects" icon={HiUserCircle}>
+      <Tabs.Item active title="Completed Projects" icon={HiClipboardCheck}>
         <ProjectGrid
           gridItems={allProjects}
           cardOrientation={CardOrientation.Vertical}
         ></ProjectGrid>
       </Tabs.Item>
-      <Tabs.Item active title="Ongoing Projects" icon={HiUserCircle}>
+      <Tabs.Item active title="Ongoing Projects" icon={FaBarsProgress}>
         <ProjectGrid
           gridItems={ongoingProjects}
           cardOrientation={CardOrientation.Vertical}
         ></ProjectGrid>
       </Tabs.Item>
-      <Tabs.Item title="Publications" icon={MdDashboard}>
+      <Tabs.Item title="Publications" icon={FaBook}>
         <ProjectGrid
           gridItems={publications}
           cardOrientation={CardOrientation.Vertical}
         ></ProjectGrid>
       </Tabs.Item>
-      <Tabs.Item title="By Year" icon={HiAdjustments}>
+      <Tabs.Item title="By Year" icon={FaCalendar}>
         <DividedTab
           list={years}
           cardOrientation={CardOrientation.Vertical}

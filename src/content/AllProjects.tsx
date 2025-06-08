@@ -1,16 +1,17 @@
 import { ProjectCardInputs } from "../components/project/ProjectCard";
 
 export var mobileApp: ProjectCardInputs = {
-  src: "/images/mobileAppFinal.png",
-  title: "Mobile App",
+  src: "/images/mobileApp.jpg",
+  title: "BeNote",
   year: 2024,
-  tech: ["Swift", "Storyboard"],
-  purpose: "",
-  authors: "",
+  tech: ["Swift", "Storyboard", "Google Firebase"],
+  purpose: "Mobile App Development Final Project",
+  authors: "Jiana Ang, Darren Chen, Tyler Chen, Ananya Tadigadapa",
   description:
-    "Ongoing project to create a mobile application in Swift following the model-view-controller design pattern.",
-  subtitle: "",
+    "Designed and programmed a mobile application in Swift which was a daily prompting tool that allows you to jot down notes, track your location in real time, and view your user profile. You can also befriend, discover, and react to other users' daily notes and profiles, creating a seamlessly connected and reflective journaling experience.",
+  subtitle: "Daily Journaling Mobile Application",
   skills: [],
+  sourceCode: "https://github.com/TylerChen1200/BeNote"
 };
 
 export var machineLearning: ProjectCardInputs = {
@@ -63,6 +64,7 @@ export var myowearable: ProjectCardInputs = {
     "Many athletes face recurring injury through unknowingly overstraining their muscles. To help prevent this, a compression sleeve-mounted medical device called the Myowearable was developed, which can be used without professional supervision. The Myowearable monitors the amount of electrical stimulation in the adjacent muscle through three electrodes of a surface electromyography (sEMG) sensor touching the skin. The collected data is sent to an Arduino component providing real-time audio feedback. Real-time visual feedback and data analyses, including injury prediction warnings and graphs, can be viewed in the user interface of the accompanying software on a computer paired via Bluetooth.",
   subtitle: "A surface EMG injury prevention sleeve",
   skills: [],
+  publishedIn: "American Society of Engineering Education National Conference 2022"
 };
 
 export var foodSaver: ProjectCardInputs = {
@@ -76,6 +78,7 @@ export var foodSaver: ProjectCardInputs = {
     "An estimated 35% of all food purchased for use at home is wasted and the impacts are widespread. The most significant are environmental effects, as the food sector generates one third of the world’s greenhouse gas emissions. The social and economic consequences are more subtle. Families lose hundreds of dollars a year on thrown out food, and consuming too much raises prices and lowers access. The smart container is built to be set inside the refrigerator and senses the presence of food through a weight sensor placed at the bottom. If the food within the container is not disturbed for 48 h, it will send reminders by beeping when the fridge is opened or messages to the cell phone through a dedicated app. For food that has only been partially consumed during that time, there is a button that resumes the timer from the previous session rather than resetting it, thus providing the cumulative time the food has been stored in the refrigerator. As designed, the smart container consists of two sensors: a load sensor for checking when a box of food has been placed in it and a light sensor to check when the fridge is open. It also has a push button to reset the timer or allow it to continue from the previous reset. A buzzer has been incorporated into the container, which is activated when the time threshold of food storage has passed and the refrigerator is open.",
   subtitle: "Prototype smart container for food storage",
   skills: [],
+  publishedIn: "IEEE Potentials, May 2022 Issue"
 };
 
 export var website: ProjectCardInputs = {
@@ -111,15 +114,21 @@ export var scrabble: ProjectCardInputs = {
 };
 
 export var capstone: ProjectCardInputs = {
-  src: "/images/capstone.jpg",
-  title: "Capstone",
-  year: 2022,
-  tech: ["Python", "Arduino", "Computer Vision"],
-  purpose: "Engineering Capstone Final Project",
-  authors: "teammates",
-  description: "",
+  src: "/images/capstone.png",
+  title: "AMP'D - Capstone Project",
+  year: 2025,
+  tech: ["Python", "PyQt", "Google Firebase", "Raspberry Pi", "React.js"],
+  purpose: "Northeastern University ECE Capstone Final Project",
+  authors: "Justin Bahr, Carson Dang, Phi Hoang, Hari Narayanam, Alexander Pervizi, Ananya Tadigadapa, Jonathan Qi",
+  description: "Public health is at risk from increased microplastic content in drinking water, which so far can only be reliably measured through expensive professional laboratory testing. The Automated MicroPlastic Detector (AMP’D) team has developed a system for rapid detection of microplastics in water. The system provides both a visual and quantitative analysis, allowing users to assess the quality of their water at home, and compare microplastic concentrations in household, tap, and bottled water against safety standards. AMP’D proves that it is possible to create a low-cost, intuitive, and accessible system to test for microplastics.",
   subtitle: "Automated filtering & detection of microplastics in water",
-  skills: [],
+  skills: [
+    {
+      skill: "Python",
+      usage: "Designed and implemented an MVC style program to run on a Raspberry Pi and allow a user to perform experiments to determine plastic content. GUI was made using PyQt."
+    }
+  ],
+  sourceCode: "https://ampd-website.onrender.com/"
 };
 
 export var teslaProject: ProjectCardInputs = {

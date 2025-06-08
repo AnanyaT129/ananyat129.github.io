@@ -12,9 +12,9 @@ export function DividedTab(props: {
       {Array.from(Array(props.list.length)).map((_, index) => (
         <>
           <Divider>
-            <h3 className="font-medium text-gray-800 dark:text-white">
+            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               {props.list[index].name}
-            </h3>
+            </h5>
           </Divider>
           <ProjectGrid
             gridItems={props.list[index].items}

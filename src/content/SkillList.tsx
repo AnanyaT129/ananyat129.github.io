@@ -1,6 +1,7 @@
 import { ProjectCardInputs } from "../components/project/ProjectCard";
 import {
   bulletJournal,
+  capstone,
   foodSaver,
   machineLearning,
   mobileApp,
@@ -27,7 +28,7 @@ var languages: Skill[] = [
   {
     title: "TypeScript",
     description: "look at this amazing website!",
-    projects: [teslaProject, woodmacProject, website],
+    projects: [teslaProject, capstone, woodmacProject, website],
   },
   {
     title: "Scala",
@@ -39,7 +40,7 @@ var languages: Skill[] = [
   },
   {
     title: "Python",
-    projects: [machineLearning, myowearable, foodSaver, scrabble],
+    projects: [capstone, machineLearning, myowearable, foodSaver, scrabble],
   },
   {
     title: "C++",
@@ -111,12 +112,17 @@ var cloud: Skill[] = [
     title: "Kafka",
     projects: [teslaProject],
   },
+  {
+    title: "Google Firebase",
+    projects: [capstone, mobileApp]
+  }
 ];
 
 var software: Skill[] = [
   {
     title: "Git",
     projects: [
+      capstone,
       teslaProject,
       woodmacProject,
       bulletJournal,
@@ -143,7 +149,7 @@ var software: Skill[] = [
   },
   {
     title: "Arduino/Raspberry Pi",
-    projects: [myowearable, foodSaver],
+    projects: [capstone, myowearable, foodSaver],
   },
 ];
 

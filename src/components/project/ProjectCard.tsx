@@ -18,6 +18,8 @@ export type ProjectCardInputs = {
   authors: string;
   description: string;
   skills: { skill: string; usage: string }[];
+  sourceCode?: string;
+  publishedIn?: string;
 };
 
 const Item = styled(Box)(({ theme }) => ({
@@ -72,11 +74,7 @@ export function ProjectCard(props: {
         ))}
       </Stack>
       <ModalButton
-        title={props.card.title}
-        subtitle={props.card.subtitle}
-        purpose={props.card.purpose}
-        authors={props.card.authors}
-        description={props.card.description}
+        {...props.card}
         buttonContent={content}
       ></ModalButton>
     </Card>

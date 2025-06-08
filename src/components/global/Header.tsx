@@ -34,16 +34,16 @@ export function Header(props: { active?: number }) {
           <NavbarLink active={active[2]}>
             <Link to={"/leadership"}>Leadership</Link>
           </NavbarLink>
-          <NavbarLink active={active[3]}>
+          {/* <NavbarLink active={active[3]}>
             <Link to={"/music"}>Music</Link>
           </NavbarLink>
           <NavbarLink active={active[4]}>
             <Link to={"/sustainability"}>Sustainability</Link>
-          </NavbarLink>
+          </NavbarLink> */}
         </NavbarCollapse>
         {/* <DarkThemeToggle /> */}
       </Navbar>
-      <InProgressBanner />
+      {/* <InProgressBanner /> */}
     </>
   );
 }

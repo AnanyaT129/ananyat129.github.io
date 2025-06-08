@@ -14,7 +14,6 @@ export function WorkExperienceList(props: {
       <h5 className="mb-4 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         Work Experience
       </h5>
-      <ResumePDFView />
       <WorkTimeline work={props.work} />
       {props.button !== "" && props.link !== "" ? (
         <Link to={props.link}>

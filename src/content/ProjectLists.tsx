@@ -16,6 +16,8 @@ export type DividedList = {
 };
 
 export var allProjects: ProjectCardInputs[] = [
+  capstone,
+  mobileApp,
   machineLearning,
   website,
   myowearable,
@@ -24,14 +26,18 @@ export var allProjects: ProjectCardInputs[] = [
   scrabble,
 ];
 
-export var ongoingProjects: ProjectCardInputs[] = [capstone, mobileApp];
+export var ongoingProjects: ProjectCardInputs[] = [];
 
 export var publications: ProjectCardInputs[] = [myowearable, foodSaver];
 
 export var years: DividedList[] = [
   {
+    name: "2025",
+    items: [capstone]
+  },
+  {
     name: "2024",
-    items: [capstone, machineLearning, website, mobileApp],
+    items: [machineLearning, website, mobileApp],
   },
   {
     name: "2023",
@@ -45,15 +51,15 @@ export var years: DividedList[] = [
 
 export var topics: DividedList[] = [
   {
-    name: "Machine Learning/Computer Vision",
-    items: [capstone, machineLearning],
-  },
-  {
     name: "Full-stack engineering",
     items: [website, bulletJournal, scrabble],
   },
   {
     name: "Embedded/Programming Hardware",
     items: [capstone, myowearable, foodSaver],
+  },
+  {
+    name: "Machine Learning/Computer Vision",
+    items: [machineLearning],
   },
 ];

@@ -10,6 +10,8 @@ type ModalButtonInputs = {
   buttonContent: JSX.Element;
   descriptionAlert?: string;
   skill?: string;
+  sourceCode?: string;
+  publishedIn?: string;
 };
 
 export function ModalButton(props: ModalButtonInputs) {
@@ -30,6 +32,16 @@ export function ModalButton(props: ModalButtonInputs) {
           {props.authors !== "" ? (
             <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
               {props.authors}
+            </p>
+          ) : null}
+          {props.sourceCode !== undefined ? (
+            <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+              <b>Source Code:</b> <a href={props.sourceCode} target="_blank">{props.sourceCode}</a>
+            </p>
+          ) : null}
+          {props.publishedIn !== "" ? (
+            <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+              <b>Published in: </b>{props.publishedIn}
             </p>
           ) : null}
         </Modal.Header>

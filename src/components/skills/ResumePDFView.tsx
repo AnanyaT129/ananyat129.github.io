@@ -3,13 +3,10 @@ import React from "react";
 
 export function ResumePDFView() {
   return (
-    <Alert color="info">
-      <span className="font-medium">
-        View PDF Resume{" "}
-        <a href="/resume.pdf" target="_blank" rel="noreferrer">
-          here
-        </a>
-      </span>{" "}
-    </Alert>
+    <span className="font-medium">
+      <a href="/resume.pdf" target="_blank" rel="noreferrer">
+        <Alert color="info">View PDF Resume here</Alert>
+      </a>
+    </span>
   );
 }
