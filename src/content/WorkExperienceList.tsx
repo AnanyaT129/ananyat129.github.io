@@ -5,24 +5,33 @@ import {
   neural,
   river,
   tesla,
+  teslaInternship,
   woodmac,
 } from "./AllWorkExperiences";
 
 export var RecentWorkExperiences: WorkTimelineProps[] = [
   {
+    year: "2025",
+    work: [tesla]
+  },
+  {
     year: "2024",
-    work: [tesla],
+    work: [teslaInternship],
   },
   {
     year: "2023",
-    work: [woodmac, neural],
+    work: [woodmac],
   },
 ];
 
 export var AllWorkExperiences: WorkTimelineProps[] = [
   {
+    year: "2025",
+    work: [tesla]
+  },
+  {
     year: "2024",
-    work: [tesla],
+    work: [teslaInternship],
   },
   {
     year: "2023",

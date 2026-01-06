@@ -171,3 +171,27 @@ export var woodmacProject: ProjectCardInputs = {
     },
   ],
 };
+
+export var cafePassport: ProjectCardInputs = {
+  src: "/images/cafePassport.png",
+  title: "Cafe Passport",
+  year: 2025,
+  tech: ["TypeScript", "React.js", "GraphQL", "Node.js", "Google Firebase"],
+  purpose: "",
+  authors: "Ananya Tadigadapa, Aidan Domondon",
+  description: "The Cafe Passport is a fullstack web application that allows users search and rate cafes in major cities. It was built using React.js and TypeScript for the frontend, Node.js and GraphQL for the backend, and Google Firebase for authentication and database management. Users can create accounts, log in, and explore a curated list of cafes complete with specific cafe amenities and rankings. The biggest feature is a search and recommendation algorithm that will provide the user with top cafes meeting their needs regarding purpose of visit, distance, and types of drinks. The application features a user-friendly interface that allows for easy navigation and interaction. Users can add their own experiences to their account to keep track of where they have been and how they liked it.",
+  subtitle: "Cafe rating and recommendation web application",
+  skills: []
+}
+
+export var galleryScroll: ProjectCardInputs = {
+  src: "/images/galleryScroll.png",
+  title: "Gallery Scroll",
+  year: 2026,
+  tech: ["TypeScript", "React.js", "Node.js", "Open source APIs"],
+  purpose: "",
+  authors: "Ananya Tadigadapa, Aidan Domondon",
+  description: "The Gallery Scroll is a fullstack web application that invites users to avoid mindless scrolling and AI generated content by interacting with real art serviced from open source APIs provided by museums around the world.",
+  subtitle: "Application to explore art from museums worldwide",
+  skills: []
+}

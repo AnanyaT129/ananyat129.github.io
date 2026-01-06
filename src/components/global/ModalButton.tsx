@@ -39,7 +39,7 @@ export function ModalButton(props: ModalButtonInputs) {
               <b>Source Code:</b> <a href={props.sourceCode} target="_blank">{props.sourceCode}</a>
             </p>
           ) : null}
-          {props.publishedIn !== "" ? (
+          {props.publishedIn && props.publishedIn !== "" ? (
             <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
               <b>Published in: </b>{props.publishedIn}
             </p>

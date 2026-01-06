@@ -8,6 +8,8 @@ import {
   website,
   scrabble,
   capstone,
+  cafePassport,
+  galleryScroll,
 } from "./AllProjects";
 
 export type DividedList = {
@@ -26,14 +28,21 @@ export var allProjects: ProjectCardInputs[] = [
   scrabble,
 ];
 
-export var ongoingProjects: ProjectCardInputs[] = [];
+export var ongoingProjects: ProjectCardInputs[] = [
+  galleryScroll,
+  cafePassport
+];
 
 export var publications: ProjectCardInputs[] = [myowearable, foodSaver];
 
 export var years: DividedList[] = [
   {
+    name: "2026",
+    items: [galleryScroll],
+  },
+  {
     name: "2025",
-    items: [capstone]
+    items: [cafePassport, capstone]
   },
   {
     name: "2024",
@@ -52,7 +61,7 @@ export var years: DividedList[] = [
 export var topics: DividedList[] = [
   {
     name: "Full-stack engineering",
-    items: [website, bulletJournal, scrabble],
+    items: [galleryScroll, cafePassport, website, bulletJournal, scrabble],
   },
   {
     name: "Embedded/Programming Hardware",

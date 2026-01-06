@@ -26,21 +26,33 @@ export type SkillSet = {
 
 var languages: Skill[] = [
   {
+    title: "Scala",
+    projects: [teslaProject],
+  },
+  {
     title: "TypeScript",
     description: "look at this amazing website!",
     projects: [teslaProject, capstone, woodmacProject, website],
   },
   {
-    title: "Scala",
-    projects: [teslaProject],
-  },
-  {
-    title: "Java",
-    projects: [bulletJournal],
+    title: "GraphQL",
+    projects: [teslaProject, woodmacProject],
   },
   {
     title: "Python",
     projects: [capstone, machineLearning, myowearable, foodSaver, scrabble],
+  },
+  {
+    title: "Ruby",
+    projects: [teslaProject],
+  },
+  {
+    title: "SQL",
+    projects: [teslaProject, woodmacProject],
+  },
+  {
+    title: "Java",
+    projects: [bulletJournal],
   },
   {
     title: "C++",
@@ -53,42 +65,42 @@ var languages: Skill[] = [
   {
     title: "C",
     projects: [],
-  },
-  {
-    title: "SQL",
-    projects: [teslaProject, woodmacProject],
-  },
-  {
-    title: "HTML",
-    projects: [website],
-  },
-  {
-    title: "CSS",
-    projects: [website],
-  },
+  }
 ];
 
 var frameworks: Skill[] = [
   {
-    title: "GraphQL",
-    projects: [teslaProject, woodmacProject],
-  },
-  {
-    title: "Docker",
-    projects: [woodmacProject],
+    title: "Apache Kafka",
+    projects: [teslaProject],
   },
   {
     title: "React.js",
-    projects: [teslaProject, website],
+    projects: [teslaProject, capstone, website, woodmacProject],
   },
   {
     title: "Akka",
     projects: [teslaProject],
   },
   {
+    title: "Rails",
+    projects: [teslaProject],
+  },
+  {
     title: "Node.js",
     projects: [woodmacProject, website],
   },
+  {
+    title: "Google Firebase",
+    projects: [capstone, mobileApp]
+  },
+  {
+    title: "Cloud Native PostgreSQL",
+    projects: [teslaProject],
+  },
+  {
+    title: "Google Protobuf",
+    projects: [teslaProject],
+  }
 ];
 
 var cloud: Skill[] = [
@@ -109,36 +121,28 @@ var cloud: Skill[] = [
     projects: [teslaProject],
   },
   {
-    title: "Kafka",
+    title: "Docker",
+    projects: [woodmacProject],
+  },
+  {
+    title: "Infrastructure as Code",
     projects: [teslaProject],
   },
   {
-    title: "Google Firebase",
-    projects: [capstone, mobileApp]
-  }
-];
-
-var software: Skill[] = [
-  {
-    title: "Git",
-    projects: [
-      capstone,
-      teslaProject,
-      woodmacProject,
-      bulletJournal,
-      website,
-      myowearable,
-      scrabble,
-    ],
+    title: "Splunk",
+    projects: [teslaProject, woodmacProject],
   },
   {
-    title: "Agile",
-    projects: [woodmacProject],
+    title: "Grafana",
+    projects: [teslaProject],
   },
   {
     title: "Jenkins (CI/CD)",
     projects: [woodmacProject],
   },
+];
+
+var embedded: Skill[] = [
   {
     title: "Linux",
     projects: [],
@@ -156,18 +160,18 @@ var software: Skill[] = [
 export var skillList: SkillSet[] = [
   {
     skills: languages,
-    name: "Languages",
+    name: "Programming and Qeuery Languages",
   },
   {
     skills: frameworks,
-    name: "Frameworks/Tools",
+    name: "Frameworks, Runtimes, and Data",
   },
   {
     skills: cloud,
-    name: "Cloud",
+    name: "Cloud, DevOps, and Observability",
   },
   {
-    skills: software,
-    name: "Software",
+    skills: embedded,
+    name: "Embedded Systems and Robotics",
   },
 ];

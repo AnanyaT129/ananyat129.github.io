@@ -25,6 +25,7 @@ export function Introduction() {
                 Hi! I'm Ananya
               </h5>
               <p className="text-lg text-gray-700 dark:text-gray-400">
+                I'm a distributed systems engineer working on energy cloud software at Tesla.
                 I just graduated from Northeastern University majoring in Computer
                 Engineering & Computer Science, with minors in math and music
                 performance. Through my varied interests, my main goal is to

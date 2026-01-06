@@ -3,6 +3,24 @@ import { WorkDescriptionProps } from "../components/experience/WorkDescriptionDr
 export var tesla: WorkDescriptionProps = {
   title: "Tesla",
   position:
+    "Distributed systems engineer working on full stack cloud software for energy products",
+  accomplished: `
+  • Designed and implemented a Scala-based API for industrial firmware updates, streamlining approval workflows for 100% of industrial customers and enabling end-to-end visibility for Service Engineering teams.\n
+  • Delivered the first UI-based progress tracking for industrial firmware updates by integrating the API into a Ruby on Rails application owned by a separate team, establishing precedent for cross-team code contributions.\n
+  • Executed the migration of 10+ applications from AWS to on-premise infrastructure, including Kafka relays, legacy Golang services, and mission-critical systems requiring near-zero downtime.\n
+  • Planned and performed two database migrations from AWS to on-prem CNPG with scheduled downtime.\n
+  • Coordinated stakeholder communications, defined execution sequencing, mitigated regionalization impact, improved alerting, and documented followups to ensure successful application and database cutovers.\n
+  • Serve on the team’s 24/7 on-call rotation, responding to production incidents and restoring service under time pressure through rapid triage and root cause analysis.\n
+  • Produce and present concise incident documentation, including timelines, impact assessments, and actionable followups, and own remediation items to drive operational improvements.\n`.split("\n",)
+  ,
+  learned: [],
+  time: "July - Present",
+  imgSrc: "/images/teslaLogo.webp",
+};
+
+export var teslaInternship: WorkDescriptionProps = {
+  title: "Tesla",
+  position:
     "Distributed systems intern working on full stack cloud software for energy products",
   accomplished:
     `• Designed a new API exposing file history for remote viewing of IoT device settings: Presented and refined protobuf contracts for team review, considered contexts and future applications, and planned required tasks\n
